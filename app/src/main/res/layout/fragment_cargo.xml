@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentCargo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="75"
+        android:layout_marginTop="@dimen/margin_bigger"
+        android:layout_marginBottom="@dimen/margin_bigger">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:weightSum="2.6">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+            </Space>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btn_package"
+                    style="@style/BtnKeys"
+                    android:textOff="@string/_1_package"
+                    android:textOn="@string/_1_package" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btn_lot"
+                    style="@style/BtnKeys"
+                    android:textOn="@string/lot_few"
+                    android:textOff="@string/lot_few"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+            </Space>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:weightSum="2.6">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+            </Space>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btn_one"
+                    style="@style/BtnKeys"
+                    android:textOn="@string/one_stop"
+                    android:textOff="@string/one_stop"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:id="@+id/btn_few"
+                    style="@style/BtnKeys"
+                    android:textOn="@string/few_stops"
+                    android:textOff="@string/few_stops"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+            </Space>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:weightSum="2.6" />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_bigger"
+            android:layout_alignParentBottom="true">
+
+                <movesht.com.movesht.CustomFontsButton
+                    android:id="@+id/btn_continue"
+                    android:layout_width="@dimen/size_text_one"
+                    android:layout_height="@dimen/size_11"
+                    android:background="@drawable/selector_btn_green_gray"
+                    android:clickable="true"
+                    android:text="@string/btn_continue"
+                    android:textColor="@drawable/button_continue"
+                    android:textSize="@dimen/font_8"
+                    app:fontName="BebasNeueBold"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>

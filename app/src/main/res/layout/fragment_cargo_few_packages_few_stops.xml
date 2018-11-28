@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_from"
+            style="@style/TextField"
+            android:text="@string/from"
+            app:fontName="BebasNeueBold"/>
+
+        <movesht.com.movesht.CustomFontsEditText
+            android:id="@+id/ed_enter"
+            android:layout_width="@dimen/size_17"
+            android:layout_height="@dimen/size_11"
+            android:background="@drawable/btn_corners_white_second"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_4"
+            android:visibility="gone"
+            app:fontName="BebasNeueBold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_2"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_add_package"
+                    style="@style/imgBlackButtonBig"
+                    android:background="@drawable/circle_button_black"
+                    android:src="@drawable/ic_loads_white"
+                    tools:ignore="ContentDescription"/>
+
+                <movesht.com.movesht.CustomFontsTextView
+                    style="@style/TvBlackButton"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/add_package"
+                    app:fontName="ArimoRegular"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"/>
+
+</LinearLayout>

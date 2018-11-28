@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_black">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bigger">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/BtnBackWhite"
+            tools:ignore="ContentDescription"/>
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/customFontsTextView"
+            style="@style/TvWhite"
+            android:text="@string/shipment_title"
+            app:fontName="BebasNeueBold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_14"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/colorBlue"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small">
+
+        <ImageView
+            android:id="@+id/btnGift"
+            style="@style/BtnBlackAndWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_gift_black"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/btnClose"
+            style="@style/ImgBtnThree"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle_red"
+            android:src="@drawable/ic_clear_white"
+            tools:ignore="ContentDescription"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/btnGift"
+            android:layout_toLeftOf="@id/btnClose"
+            android:layout_toRightOf="@id/btnGift"
+            android:layout_toStartOf="@id/btnClose"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_smallest"
+            android:weightSum="100">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_title"
+                style="@style/TvWhite"
+                android:layout_weight="40"
+                android:gravity="center"
+                android:text="@string/title_down"
+                app:fontName="BebasNeueBold"/>
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tvAdress"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_bigger"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginStart="@dimen/margin_button"
+                android:layout_weight="60"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_0"
+                android:paddingRight="@dimen/size_0"
+                android:text="@string/goes_to"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_2"
+                app:fontName="BebasNeueBold"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_14"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_black"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small">
+
+        <ImageView
+            android:id="@+id/btnMoney"
+            style="@style/BtnBlackAndWhite"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_money_black"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/btnStart"
+            style="@style/BtnBlackAndWhite"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_star_black"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/btnUp"
+            style="@style/BtnBlackAndWhite"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_up_black"
+            tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shipment_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/rl_item"
+        android:background="@color/colorWhite"/>
+
+</RelativeLayout>

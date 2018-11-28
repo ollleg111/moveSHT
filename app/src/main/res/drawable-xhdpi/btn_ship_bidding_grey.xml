@@ -1,0 +1,25 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="@dimen/padding_small"
+        android:left="@dimen/padding_small"
+        android:right="@dimen/padding_small"
+        android:top="@dimen/padding_small"
+        >
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <!--<size android:height="14dp"-->
+            <!--android:width="14dp"/>-->
+            <solid android:color="@color/colorGrey"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_bidding_black"
+
+        android:bottom="@dimen/margin_5"
+        android:left="@dimen/margin_button"
+        android:right="@dimen/margin_button"
+        android:top="@dimen/margin_5"
+        />
+</layer-list>

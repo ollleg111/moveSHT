@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background_black"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bigger">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/BtnBackWhite"
+            tools:ignore="ContentDescription"/>
+
+        <movesht.com.movesht.CustomFontsTextView
+            style="@style/TvWhite"
+            android:text="@string/check_out"
+            app:fontName="BebasNeueBold"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_4"
+        android:paddingRight="@dimen/size_4"
+        android:showDividers="beginning|middle"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_bill"
+                style="@style/TvBlack"
+                android:text="@string/bill"
+                app:fontName="BebasNeueBold"/>
+
+            <ImageView
+                android:id="@+id/img_bill"
+                style="@style/BtnCalc"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_biggest"
+                android:src="@drawable/ic_right_white"
+                tools:ignore="ContentDescription"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorGrey"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_contract"
+                style="@style/TvBlack"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/contract"
+                app:fontName="BebasNeueBold"/>
+
+            <ImageView
+                android:id="@+id/img_contract"
+                style="@style/BtnCalc"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_biggest"
+                android:src="@drawable/ic_right_white"
+                tools:ignore="ContentDescription"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorGrey"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_insurance"
+                style="@style/TvBlack"
+                android:text="@string/insurance"
+                app:fontName="BebasNeueBold"/>
+
+            <ImageView
+                style="@style/BtnCalc"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_biggest"
+                android:src="@drawable/ic_right_white"
+                tools:ignore="ContentDescription"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorGrey"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_schedule"
+                style="@style/TvBlack"
+                android:text="@string/schedule"
+                app:fontName="BebasNeueBold"/>
+
+            <ImageView
+                android:id="@+id/img_schedule"
+                style="@style/BtnCalc"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_biggest"
+                android:src="@drawable/ic_right_white"
+                tools:ignore="ContentDescription"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorGrey"/>
+        </RelativeLayout>
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_total"
+            style="@style/TvBlack"
+            android:layout_weight="18"
+            android:gravity="center_vertical"
+            android:text="@string/total"
+            app:fontName="BebasNeueBold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:background="@color/colorWhite">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="@dimen/size_text_two"
+                android:layout_height="@dimen/size_9"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_button_green"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_6"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

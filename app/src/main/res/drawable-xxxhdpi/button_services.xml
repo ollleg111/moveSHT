@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="@dimen/size_5"
+        android:height="@dimen/size_5"
+        android:drawable="@drawable/circle_button_black"/>
+
+
+    <item
+        android:width="@dimen/margin_smallest"
+        android:height="@dimen/margin_smallest"
+        android:drawable="@drawable/ic_services_white"
+        android:gravity="center"/>
+</layer-list>

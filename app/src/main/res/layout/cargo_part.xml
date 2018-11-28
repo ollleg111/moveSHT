@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/fl_cargo_part"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_black"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_to"
+            style="@style/TextField"
+            android:text="@string/to"
+            app:fontName="BebasNeueBold"/>
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_who"
+            style="@style/TvField"
+            android:text="@string/who_is"
+            app:fontName="BebasNeueBold"/>
+
+        <movesht.com.movesht.CustomFontsEditText
+            android:id="@+id/ed_first_name"
+            style="@style/TextField"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            app:fontName="BebasNeueBold"/>
+
+        <movesht.com.movesht.CustomFontsEditText
+            android:id="@+id/ed_last_name"
+            style="@style/TextField"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            app:fontName="BebasNeueBold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <movesht.com.movesht.CustomFontsEditText
+                android:id="@+id/ed_phone"
+                style="@style/TextField"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:hint="@string/cell_phone"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                app:fontName="BebasNeueBold"/>
+
+            <ImageView
+                android:id="@+id/img_refresh"
+                android:layout_width="@dimen/size_11"
+                android:layout_height="@dimen/size_11"
+                android:layout_marginTop="@dimen/padding_big"
+                android:layout_toEndOf="@id/ed_phone"
+                android:layout_toRightOf="@id/ed_phone"
+                android:background="@drawable/circle_white"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/padding_big"
+                android:src="@drawable/ic_recycler"
+                tools:ignore="ContentDescription"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
+

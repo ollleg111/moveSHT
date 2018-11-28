@@ -1,0 +1,26 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="@dimen/padding_small"
+        android:left="@dimen/padding_small"
+        android:right="@dimen/padding_small"
+        android:top="@dimen/padding_small"
+
+        android:width="@dimen/size_9"
+        android:height="@dimen/size_9">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <!--<size android:height="14dp"-->
+            <!--android:width="14dp"/>-->
+            <solid android:color="@color/colorDarkGrey"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_loads_black"
+        android:bottom="@dimen/padding_big"
+        android:left="@dimen/padding_big"
+        android:right="@dimen/padding_big"
+        android:top="@dimen/padding_big"
+        />
+</layer-list>

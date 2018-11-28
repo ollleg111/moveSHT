@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_cargo_type_default"
+    android:background="@color/colorTransperent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <movesht.com.movesht.CustomFontsTextView
+        android:id="@+id/tv_dimensions"
+        style="@style/TvField"
+        android:text="@string/dimensions"
+        app:fontName="BebasNeueBold" />
+
+    <LinearLayout
+        android:layout_width="@dimen/size_17"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_big"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/size_9"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/btn_w"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_9"
+                android:background="@drawable/btn_blue_white_padding"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@drawable/button_keys_big_text_color"
+                android:textOff="@string/w"
+                android:textOn="@string/w"
+                android:textSize="@dimen/font_6"
+                tools:ignore="ContentDescription" />
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_w"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:gravity="center"
+                android:text="@string/_0_0_in"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_2"
+                app:fontName="BebasNeueBold" />
+
+            <ImageView
+                android:id="@+id/img_wTriangle"
+                android:layout_width="@dimen/margin_smallest"
+                android:layout_height="@dimen/margin_smallest"
+                android:layout_gravity="center"
+                android:background="@drawable/triangle_white"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/size_9"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginStart="@dimen/padding_medium"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/btn_d"
+                android:layout_width="@dimen/size_9"
+                android:layout_height="@dimen/size_9"
+                android:background="@drawable/btn_blue_white_padding"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@drawable/button_keys_big_text_color"
+                android:textOff="@string/d"
+                android:textOn="@string/d"
+                android:textSize="@dimen/font_6" />
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:gravity="center"
+                android:text="@string/_0_0_in"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_2"
+                app:fontName="BebasNeueBold" />
+
+            <ImageView
+                android:id="@+id/img_dTriangle"
+                android:layout_width="@dimen/margin_smallest"
+                android:layout_height="@dimen/margin_smallest"
+                android:layout_gravity="center"
+                android:background="@drawable/triangle_white"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/size_9"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginStart="@dimen/padding_medium"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/btn_h"
+                android:layout_width="@dimen/size_9"
+                android:layout_height="@dimen/size_9"
+                android:background="@drawable/btn_blue_white_padding"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@drawable/button_keys_big_text_color"
+                android:textOff="@string/h"
+                android:textOn="@string/h"
+                android:textSize="@dimen/font_6" />
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:gravity="center"
+                android:text="@string/_0_0_in"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_2"
+                app:fontName="BebasNeueBold" />
+
+            <ImageView
+                android:id="@+id/img_hTriangle"
+                android:layout_width="@dimen/margin_smallest"
+                android:layout_height="@dimen/margin_smallest"
+                android:layout_gravity="center"
+                android:background="@drawable/triangle_white"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginStart="@dimen/padding_medium"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/btn_weight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_9"
+                android:background="@drawable/btn_blue_white_pad_corners"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@drawable/button_keys_big_text_color"
+                android:textOff="@string/weight"
+                android:textOn="@string/weight"
+                android:textSize="@dimen/font_6" />
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:gravity="center"
+                android:text="@string/_0_0_in"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_2"
+                app:fontName="BebasNeueBold" />
+
+            <ImageView
+                android:id="@+id/img_weightTriangle"
+                android:layout_width="@dimen/margin_smallest"
+                android:layout_height="@dimen/margin_smallest"
+                android:layout_gravity="center"
+                android:background="@drawable/triangle_white"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <movesht.com.movesht.CustomFontsEditText
+        android:id="@+id/ed_enter"
+        android:layout_width="@dimen/size_17"
+        android:layout_height="@dimen/size_11"
+        android:background="@drawable/btn_corners_white_second"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_4"
+        android:visibility="gone"
+        app:fontName="BebasNeueBold" />
+
+</LinearLayout>

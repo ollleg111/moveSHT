@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:background="@color/colorWhite"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/margin_button"
+                android:paddingRight="@dimen/margin_button">
+
+    <ImageView
+        android:id="@+id/iv_gift"
+        style="@style/ImgBtnThree"
+        android:background="@drawable/circle_green"
+        android:src="@drawable/ic_person_white"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/iv_gift"
+        android:layout_toRightOf="@id/iv_gift"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_9"
+            android:layout_marginLeft="@dimen/margin_smallest"
+            android:layout_marginStart="@dimen/margin_smallest"
+            android:layout_weight="50"
+            android:gravity="start|center"
+            android:text="@string/jack_daniels"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_9"
+            app:fontName="BebasNeueBook"/>
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_9"
+            android:layout_weight="25"
+            android:drawableLeft="@drawable/ic_money_black"
+            android:drawableStart="@drawable/ic_money_black"
+            android:gravity="center"
+            android:paddingEnd="@dimen/margin_button"
+            android:paddingLeft="@dimen/margin_button"
+            android:paddingRight="@dimen/margin_button"
+            android:paddingStart="@dimen/margin_button"
+            android:text="@string/number"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_4"
+            app:fontName="BebasNeueBook"/>
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_star"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_9"
+            android:layout_weight="25"
+            android:drawableLeft="@drawable/ic_star_black"
+            android:drawableStart="@drawable/ic_star_black"
+            android:gravity="center"
+            android:paddingEnd="@dimen/padding_large"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingRight="@dimen/padding_large"
+            android:paddingStart="@dimen/padding_large"
+            android:text="@string/percent"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_4"
+            app:fontName="BebasNeueBook"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGrey"/>
+
+</RelativeLayout>

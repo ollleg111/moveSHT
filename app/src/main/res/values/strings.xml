@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">MoveSHT</string>
+    <string name="user_name"></string>
+    <string name="user_pass"></string>
+
+
+    <string name="move_sht">MOVE SHT</string>
+    <string name="Email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="demo">DEMO</string>
+
+
+    <string name="first_name">First name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="rep_password">Repeat Password</string>
+
+    <string name="person">SERGEY SHNUROV</string>
+    <string name="count">76 % [925]</string>
+    <string name="_1_package">1 Package</string>
+    <string name="lot_few">Lot (few)</string>
+    <string name="one_stop">One Stop</string>
+    <string name="few_stops">Few Stops</string>
+    <string name="long_distance">Long Distance</string>
+    <string name="local">Local</string>
+    <string name="btn_continue">Continue</string>
+    <string name="auth_failed">auth_failed</string>
+
+    <string name="map_add">Add</string>
+
+    <string name="error_connection">Нет подключения к интернету</string>
+
+    <string name="text_italic">.SFUIText-Italic</string>
+    <string name="one">1</string>
+
+    <string name="fish">Lorem ipsum dolor sit amet,
+        id argumentum cotidieque vim, eum eu impedit
+        corpora epicurei. Summo graece ridens no mel,
+        nec te tritani verterem. Vel te verear deserunt.
+        In mucius ornatus oportere eos, ad posse euismod
+        iudicabit vix, eu dicat doming alterum duo. Vix
+        harum doming in. Est eu eruditi ornatus adversarium,
+        cu legere electram scriptorem vis, eu fabellas
+        vivendum convenire eam. Mucius eleifend dissentias ea quo.
+        </string>
+    <string name="bid_calc">BID CALCULATOR</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="bid">BID</string>
+    <string name="comission">COMISSION</string>
+    <string name="your_profit">YOUR PROFIT</string>
+    <string name="miles">MILES</string>
+    <string name="nav_duty">Duty</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_office">Office</string>
+    <string name="nav_messages">Messages</string>
+    <string name="nav_contacts">Contacts</string>
+    <string name="title_activity_button">ButtomActivity</string>
+    <string name="create_shipment">CREATE SHIPMENT</string>
+    <string name="bidding">Bidding</string>
+    <string name="active">Active</string>
+    <string name="completed">Completed</string>
+    <string name="who">Who</string>
+    <string name="browse_catalog">Browse Catalog</string>
+    <string name="shipments">Shipments</string>
+    <string name="invoices">Invoices</string>
+    <string name="home">HOME</string>
+    <string name="freight_type_alert">FREIGHT TYPE ALERT</string>
+    <string name="freight_type">FREIGHT TYPE</string>
+    <string name="home_down">Home</string>
+    <string name="txt_1">Title</string>
+    <string name="txt_2">0.92 mi</string>
+    <string name="txt_3">100-250 $</string>
+    <string name="Hire">Hire</string>
+    <string name="confirm">Confirm and pay</string>
+    <string name="check_out">CHECK OUT</string>
+    <string name="title_activity_create_cargo_fragment">CreateCargoFragment</string>
+    <string name="save_draft">Save Draft</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="who_is">WHO IS IT FOR?</string>
+    <string name="lastName">Last name</string>
+    <string name="cell_phone">Cell Phone</string>
+    <string name="title_down">Title</string>
+    <string name="cargo_class">Cargo Class</string>
+    <string name="choose">Choose</string>
+    <string name="dimensions">DIMENSIONS</string>
+    <string name="quantity">Quantity</string>
+    <string name="load_assistance">LOAD ASSISTANCE</string>
+    <string name="load">Load</string>
+    <string name="un_load">Unload</string>
+    <string name="schedule">SCHEDULE</string>
+    <string name="contract">CONTRACT</string>
+    <string name="total">TOTAL: 999$</string>
+    <string name="insurance">INSURANCE</string>
+    <string name="bill">BILL OF LADING</string>
+    <string name="persent">97%</string>
+    <string name="shipment_title">SHIPMENT TITLE</string>
+    <string name="title">TITLE</string>
+    <string name="goes_to">Goes to Brooklin, NY 11220</string>
+    <string name="number">110</string>
+    <string name="percent">90,2 %</string>
+    <string name="jack_daniels">JACK DANIELS</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="baking">Baking</string>
+    <string name="passing_loads">Passing loads</string>
+    <string name="passing_loads_two">PASSING LOADS</string>
+    <string name="bid_loads">Bid loads</string>
+    <string name="set_alerts">Set alerts</string>
+    <string name="jobs">Jobs</string>
+    <string name="loads">Loads</string>
+    <string name="garage">Garage</string>
+    <string name="services">Services</string>
+    <string name="office">OFFICE</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="point">.</string>
+    <string name="_0">0</string>
+    <string name="_0_0_in">0.0 in.</string>
+    <string name="xzxzxzx">xzxzxzx</string>
+    <string name="text">text</string>
+    <string name="_80">80 $</string>
+    <string name="text2">Text</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="w">W</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="add_package">Add Package</string>
+
+
+    <string name="cars">Cars</string>
+    <string name="liquid">Liquid</string>
+    <string name="anim">Animals</string>
+    <string name="garbage">Garbage</string>
+    <string name="people">People</string>
+    <string name="loose">Loose</string>
+    <string name="agricultural">Agricultural</string>
+    <string name="food">Food</string>
+    <string name="construction">Construction</string>
+    <string name="nav_notification">Notification</string>
+    <string name="nav_acc_settings">Account Settings</string>
+    <string name="nav_pay_method">Payment Method</string>
+    <string name="nav_balance">Balance</string>
+    <string name="nav_log_out">Log Out</string>
+    <string name="nav_back">Back</string>
+    <string name="tv_model">tv_model</string>
+    <string name="set_load_alerts">SET LOAD ALERTS</string>
+    <string name="truckload">TRUCKLOAD</string>
+    <string name="pick">Pick</string>
+    <string name="max_payload">MAX PAYLOAD</string>
+    <string name="pickup_radius">PICKUP RADIUS</string>
+    <string name="mi">MI</string>
+    <string name="pounds">POUNDS</string>
+    <string name="user_exist">user already exist</string>
+    <string name="d">D</string>
+    <string name="h">H</string>
+    <string name="weight">WEIGHT</string>
+    <string name="incorrectLogin">incorrect login or password</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="year">Year</string>
+    <string name="operational">OPERATIONAL</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="volume_ft">Volume (FT)</string>
+    <string name="volume">Volume</string>
+    <string name="not_packed">Not Packed</string>
+    <string name="size">Size</string>
+    <string name="cage">CAGE</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+
+</resources>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_black"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <movesht.com.movesht.CustomFontsTextView
+                    android:id="@+id/tv_from"
+                    style="@style/TextField"
+                    android:text="@string/from"
+                    app:fontName="BebasNeueBold"/>
+
+                <movesht.com.movesht.CustomFontsTextView
+                    android:id="@+id/tv_to"
+                    style="@style/TextField"
+                    android:text="@string/to"
+                    app:fontName="BebasNeueBold"/>
+
+                <movesht.com.movesht.CustomFontsTextView
+                    android:id="@+id/tv_who"
+                    style="@style/TvField"
+                    android:text="@string/who_is"
+                    app:fontName="BebasNeueBold"/>
+
+                <movesht.com.movesht.CustomFontsEditText
+                    android:id="@+id/ed_first_name"
+                    style="@style/TextField"
+                    android:hint="@string/first_name"
+                    android:inputType="textPersonName"
+                    app:fontName="BebasNeueBold"/>
+
+                <movesht.com.movesht.CustomFontsEditText
+                    android:id="@+id/ed_last_name"
+                    style="@style/TextField"
+                    android:hint="@string/last_name"
+                    android:inputType="textPersonName"
+                    app:fontName="BebasNeueBold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <movesht.com.movesht.CustomFontsEditText
+                        android:id="@+id/ed_phone"
+                        style="@style/TextField"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:hint="@string/cell_phone"
+                        android:inputType="phone"
+                        app:fontName="BebasNeueBold"/>
+
+                    <ImageView
+                        android:id="@+id/img_refresh"
+                        android:layout_width="@dimen/size_11"
+                        android:layout_height="@dimen/size_11"
+                        android:layout_marginTop="@dimen/padding_big"
+                        android:layout_toEndOf="@id/ed_phone"
+                        android:layout_toRightOf="@id/ed_phone"
+                        android:background="@drawable/circle_white"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="@dimen/padding_big"
+                        android:src="@drawable/ic_recycler"
+                        tools:ignore="ContentDescription"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <movesht.com.movesht.CustomFontsTextView
+                style="@style/TvField"
+                android:text="@string/title_down"
+                app:fontName="BebasNeueBold"/>
+
+            <movesht.com.movesht.CustomFontsEditText
+                android:id="@+id/ed_title"
+                android:layout_width="@dimen/size_17"
+                android:layout_height="@dimen/size_16"
+                android:layout_marginTop="@dimen/padding_big"
+                android:background="@drawable/btn_corners_white"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_4"
+                app:fontName="BebasNeueBold"/>
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_cargo"
+                style="@style/TvField"
+                android:text="@string/cargo_class"
+                app:fontName="BebasNeueBold"/>
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_choose"
+                style="@style/TextField"
+                android:text="@string/choose"
+                app:fontName="BebasNeueBold"/>
+
+            <FrameLayout
+                android:id="@+id/container_cargo_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/item_cargo_type_default"/>
+
+            </FrameLayout>
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_quantity"
+                style="@style/TvField"
+                android:text="@string/quantity"
+                app:fontName="BebasNeueBold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_big">
+
+                <movesht.com.movesht.CustomFontsTextView
+                    android:id="@+id/tv_quantityNum"
+                    android:layout_width="@dimen/size_14"
+                    android:layout_height="@dimen/size_11"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="@dimen/size_0"
+                    android:layout_marginRight="@dimen/size_0"
+                    android:background="@drawable/btn_corners_white"
+                    android:gravity="center"
+                    android:text="@string/_1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_4"
+                    app:fontName="BebasNeueBold"/>
+
+                <ImageView
+                    android:id="@+id/img_minus"
+                    android:layout_width="@dimen/size_11"
+                    android:layout_height="@dimen/size_11"
+                    android:layout_marginEnd="@dimen/margin_smallest"
+                    android:layout_marginRight="@dimen/margin_smallest"
+                    android:layout_toEndOf="@+id/tv_quantityNum"
+                    android:layout_toRightOf="@+id/tv_quantityNum"
+                    android:background="@drawable/circle_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="@dimen/padding_big"
+                    android:src="@drawable/ic_pen_white_remove"
+                    tools:ignore="ContentDescription"/>
+
+                <ImageView
+                    android:id="@+id/img_plus"
+                    android:layout_width="@dimen/size_11"
+                    android:layout_height="@dimen/size_11"
+                    android:layout_toEndOf="@id/img_minus"
+                    android:layout_toRightOf="@id/img_minus"
+                    android:background="@drawable/circle_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="@dimen/padding_big"
+                    android:src="@drawable/ic_add_white"
+                    tools:ignore="ContentDescription"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_2"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onClick"/>
+            </RelativeLayout>
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_load"
+                style="@style/TvField"
+                android:text="@string/load_assistance"
+                app:fontName="BebasNeueBold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_11"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small">
+
+                <Space
+                    android:id="@+id/sp_space"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"/>
+
+                <ToggleButton
+                    android:id="@+id/btn_load"
+                    android:layout_width="@dimen/size_11"
+                    android:layout_height="@dimen/size_11"
+                    android:layout_marginEnd="@dimen/margin_smallest"
+                    android:layout_marginLeft="@dimen/margin_smallest"
+                    android:layout_marginRight="@dimen/margin_smallest"
+                    android:layout_marginStart="@dimen/margin_smallest"
+                    android:layout_toLeftOf="@id/sp_space"
+                    android:layout_toStartOf="@id/sp_space"
+                    android:background="@drawable/btn_white_blue_checked"
+                    android:textOff=""
+                    android:textOn=""/>
+
+                <movesht.com.movesht.CustomFontsTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/btn_load"
+                    android:layout_toStartOf="@id/btn_load"
+                    android:gravity="center"
+                    android:text="@string/load"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_6"
+                    app:fontName="BebasNeueBold"/>
+
+                <ToggleButton
+                    android:id="@+id/btn_unload"
+                    android:layout_width="@dimen/size_11"
+                    android:layout_height="@dimen/size_11"
+                    android:layout_marginEnd="@dimen/margin_smallest"
+                    android:layout_marginLeft="@dimen/margin_smallest"
+                    android:layout_marginRight="@dimen/margin_smallest"
+                    android:layout_marginStart="@dimen/margin_smallest"
+                    android:layout_toEndOf="@id/sp_space"
+                    android:layout_toRightOf="@id/sp_space"
+                    android:background="@drawable/btn_white_blue_checked"
+                    android:textOff=""
+                    android:textOn=""/>
+
+                <movesht.com.movesht.CustomFontsTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/btn_unload"
+                    android:layout_toRightOf="@id/btn_unload"
+                    android:gravity="center"
+                    android:text="@string/un_load"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_6"
+                    app:fontName="BebasNeueBold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginTop="@dimen/padding_big"
+                android:background="@color/colorWhite">
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_14">
+
+            <movesht.com.movesht.CustomFontsButton
+                android:id="@+id/btn_save"
+                android:layout_width="@dimen/size_text_one"
+                android:layout_height="@dimen/size_11"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_corners_white"
+                android:clickable="true"
+                android:text="@string/save_draft"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_4"
+                app:fontName="BebasNeueBold"/>
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/size_7"
+                android:layout_height="@dimen/size_7"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="@drawable/button_second_white"
+                android:padding="@dimen/margin_button"
+                android:src="@drawable/ic_cancel_red"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_ok"
+                android:layout_width="@dimen/size_7"
+                android:layout_height="@dimen/size_7"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:background="@drawable/button_second_white"
+                android:padding="@dimen/margin_button"
+                android:src="@drawable/ic_ok_green"
+                tools:ignore="ContentDescription"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

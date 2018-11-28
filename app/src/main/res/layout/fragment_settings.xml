@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="@dimen/size_12"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_smallest"
+        android:paddingEnd="@dimen/padding_smallest"
+        android:paddingRight="@dimen/padding_smallest"
+        android:paddingStart="@dimen/padding_smallest"
+        android:paddingTop="@dimen/padding_smallest"
+        android:showDividers="beginning|middle"
+        android:weightSum="100">
+        <!--android:layout_marginTop="@dimen/size_14"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:background="@drawable/side_nav_bar"
+            android:orientation="horizontal">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_nav_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_arrow_left_blue"
+                android:drawableStart="@drawable/ic_arrow_left_blue"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:paddingStart="@dimen/padding_medium"
+                android:text="@string/nav_back"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/font_5"
+                app:fontName="ArimoRegular"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorGrey"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_notification"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_nav_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button"
+                android:paddingLeft="@dimen/padding_big"
+                android:paddingRight="@dimen/padding_big"
+                android:paddingStart="@dimen/padding_big"
+                android:text="@string/nav_notification"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_5"
+                app:fontName="ArimoRegular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_acc_settings"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_nav_acc_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button"
+                android:paddingLeft="@dimen/padding_big"
+                android:paddingRight="@dimen/padding_big"
+                android:paddingStart="@dimen/padding_big"
+                android:text="@string/nav_acc_settings"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_5"
+                app:fontName="ArimoRegular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pey_method"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_nav_pay_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button"
+                android:paddingLeft="@dimen/padding_big"
+                android:paddingRight="@dimen/padding_big"
+                android:paddingStart="@dimen/padding_big"
+                android:text="@string/nav_pay_method"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_5"
+                app:fontName="ArimoRegular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_balance"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_nav_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button"
+                android:paddingLeft="@dimen/padding_big"
+                android:paddingRight="@dimen/padding_big"
+                android:paddingStart="@dimen/padding_big"
+                android:text="@string/nav_balance"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_5"
+                app:fontName="ArimoRegular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_nav_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button"
+                android:paddingLeft="@dimen/padding_big"
+                android:paddingRight="@dimen/padding_big"
+                android:paddingStart="@dimen/padding_big"
+                android:text="@string/nav_log_out"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/font_5"
+                app:fontName="ArimoRegular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@color/colorWhite"/>
+    </LinearLayout>
+
+</RelativeLayout>

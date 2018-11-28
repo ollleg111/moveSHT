@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<movesht.com.movesht.ViewOne
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewButtons"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="34"
+        android:gravity="center">
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_home"
+            style="@style/TvBlack"
+            android:text="@string/home"
+            app:fontName="BebasNeueBold">
+        </movesht.com.movesht.CustomFontsTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="22"
+        android:gravity="center_horizontal">
+
+        <movesht.com.movesht.CustomFontsButton
+            android:id="@+id/btn_one"
+            android:layout_width="@dimen/size_12"
+            android:layout_height="@dimen/size_11"
+            android:background="@drawable/rounded_button_black"
+            android:text="@string/text"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_3"
+            app:fontName="BebasNeueBold">
+        </movesht.com.movesht.CustomFontsButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="22"
+        android:gravity="center_horizontal">
+
+        <movesht.com.movesht.CustomFontsButton
+            android:id="@+id/btn_two"
+            android:layout_width="@dimen/size_12"
+            android:layout_height="@dimen/size_11"
+            android:background="@drawable/rounded_button_black"
+            android:text="@string/text"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_3"
+            app:fontName="BebasNeueBold">
+        </movesht.com.movesht.CustomFontsButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="22"
+        android:gravity="center_horizontal">
+
+        <movesht.com.movesht.CustomFontsButton
+            android:id="@+id/btn_three"
+            android:layout_width="@dimen/size_12"
+            android:layout_height="@dimen/size_11"
+            android:background="@drawable/rounded_button_black"
+            android:text="@string/text"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_3"
+            app:fontName="BebasNeueBold">
+        </movesht.com.movesht.CustomFontsButton>
+
+    </LinearLayout>
+</movesht.com.movesht.ViewOne>

@@ -1,0 +1,24 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="@dimen/padding_small"
+        android:left="@dimen/padding_small"
+        android:right="@dimen/padding_small"
+        android:top="@dimen/padding_small">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <!--<size android:height="14dp"-->
+            <!--android:width="14dp"/>-->
+            <solid android:color="@color/colorDarkBlue"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_pen_white_remove"
+        android:bottom="@dimen/margin_button"
+        android:left="@dimen/margin_button"
+        android:right="@dimen/margin_button"
+        android:top="@dimen/margin_button"
+        />
+</layer-list>
+

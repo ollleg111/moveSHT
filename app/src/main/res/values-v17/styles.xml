@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BtnBackWhite" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_9</item>
+        <item name="android:layout_height">@dimen/size_9</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/circle_white</item>
+        <item name="android:padding">@dimen/padding_biggest</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:clickable">true</item>
+        <item name="android:src">@drawable/ic_left_black</item>
+    </style>
+</resources>

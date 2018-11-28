@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="nav_header_height">100dp</dimen>
+
+    <!--<dimen name="appbar_padding_top">8dp</dimen>-->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+
+    <dimen name="padding_smallest">1dp</dimen>
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding_medium">4dp</dimen>
+    <dimen name="padding_large">6dp</dimen>
+    <dimen name="padding_big">8dp</dimen>
+    <dimen name="padding_biggest">14dp</dimen>
+    <dimen name="margin_smallest">12dp</dimen>
+    <dimen name="margin_small">16dp</dimen>
+    <dimen name="margin_med">20dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_big">32dp</dimen>
+    <dimen name="margin_bigger">60dp</dimen>
+    <dimen name="margin_biggest">64dp</dimen>
+    <dimen name="margin_4">14dp</dimen>
+    <dimen name="margin_5">9dp</dimen>
+
+    <dimen name="margin_button">10dp</dimen>
+
+    <dimen name="size_0">26dp</dimen>
+    <dimen name="size_1">80dp</dimen>
+    <dimen name="size_2">130dp</dimen>
+    <dimen name="size_4">30dp</dimen>
+    <dimen name="size_5">90dp</dimen>
+    <dimen name="size_6">50dp</dimen>
+    <dimen name="size_7">45dp</dimen>
+    <dimen name="size_8">40dp</dimen>
+    <dimen name="size_9">38dp</dimen>
+    <dimen name="size_10">180dp</dimen>
+    <dimen name="size_11">34dp</dimen>
+    <dimen name="size_12">200dp</dimen>
+    <dimen name="size_13">41dp</dimen>
+    <dimen name="size_14">60dp</dimen>
+    <dimen name="size_15">260dp</dimen>
+    <dimen name="size_16">70dp</dimen>
+    <dimen name="size_17">230dp</dimen>
+
+    <dimen name="size_back">16dp</dimen>
+
+    <dimen name="size_text_one">160dp</dimen>
+    <dimen name="size_text_two">230dp</dimen>
+
+
+    <!-- Default fonts -->
+    <dimen name="font_2">10sp</dimen>
+    <dimen name="font_3">12sp</dimen>
+    <dimen name="font_4">14sp</dimen>
+    <dimen name="font_5">16sp</dimen>
+    <dimen name="font_6">18sp</dimen>
+    <dimen name="font_7">20sp</dimen>
+    <dimen name="font_8">22sp</dimen>
+    <dimen name="font_9">24sp</dimen>
+    <dimen name="font_10">26sp</dimen>
+    <dimen name="font_11">28sp</dimen>
+    <dimen name="font_12">30sp</dimen>
+    <dimen name="font_13">32sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+
+</resources>

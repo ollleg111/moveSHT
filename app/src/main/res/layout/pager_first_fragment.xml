@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager_first_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/ll_addPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_addPhotos"
+            style="@style/imgBlackButtonBig"
+            android:background="@drawable/circle_button_black"
+            android:src="@drawable/ic_add_photo"
+            android:clickable="true"
+            tools:ignore="ContentDescription" />
+
+        <movesht.com.movesht.CustomFontsTextView
+            style="@style/TvBlackButton"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/add_photos"
+            app:fontName="ArimoRegular" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+    <!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true"--><!--android:orientation="vertical"--><!--android:background="@color/colorWhite">-->
+
+    <!--<ImageView--><!--android:id="@+id/img_addPhotos"--><!--style="@style/imgBlackButtonBig"--><!--android:background="@drawable/circle_button_black"--><!--android:src="@drawable/ic_add_photo"--><!--tools:ignore="ContentDescription"/>-->
+
+    <!--<movesht.com.movesht.CustomFontsTextView--><!--style="@style/TvBlackButton"--><!--android:text="@string/add_photos"--><!--android:layout_gravity="center_horizontal"--><!--app:fontName="ArimoRegular"/>--><!--</LinearLayout>-->

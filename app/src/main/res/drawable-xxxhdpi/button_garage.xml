@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/padding_large"
+        android:left="@dimen/padding_large"
+        android:right="@dimen/padding_large"
+        android:top="@dimen/padding_large"
+
+        >
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <size
+                android:width="@dimen/size_5"
+                android:height="@dimen/size_5"/>
+            <solid android:color="@color/colorBlack"/>
+        </shape>
+    </item>
+    <item
+        android:bottom="30dp"
+        android:drawable="@drawable/ic_garage_white"
+        android:left="15dp"
+        android:right="15dp"
+        android:top="30dp"
+        />
+</layer-list>

@@ -1,0 +1,308 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="FontView" >
+         
+        <attr name="fontName" format="integer"> 
+            <enum name="ArimoBold" value="1" /> 
+            <enum name="ArimoBoldItalic" value="2" /> 
+            <enum name="ArimoItalic" value="3" /> 
+            <enum name="BebasNeueBold" value="4" /> 
+            <enum name="BebasNeueBook" value="5" /> 
+            <enum name="BebasNeueLight" value="6" /> 
+            <enum name="BebasNeueRegular" value="7" /> 
+            <enum name="BebasNeueThin" value="8" /> 
+            <enum name="ArimoRegular" value="1000" /> 
+        </attr>
+         <attr name="fontId" format="integer" /> 
+    </declare-styleable>
+
+    <style name="BlackEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/font_4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_text</item>
+        <item name="android:layout_width">@dimen/size_text_one</item>
+        <item name="android:layout_height">@dimen/margin_medium</item>
+        <item name="android:layout_marginLeft">@dimen/margin_big</item>
+        <item name="android:layout_marginRight">@dimen/margin_big</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="BtnCalc" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_9</item>
+        <item name="android:layout_height">@dimen/size_9</item>
+        <item name="android:background">@drawable/button_calc</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <style name="BtnBackWhite" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_6</item>
+        <item name="android:layout_height">@dimen/size_6</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/circle_white</item>
+        <item name="android:padding">@dimen/size_back</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:src">@drawable/ic_left_black</item>
+    </style>
+
+    <style name="BtnBackWhiteA" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_7</item>
+        <item name="android:layout_height">@dimen/size_7</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/circle_white</item>
+        <item name="android:padding">@dimen/size_back</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:src">@drawable/ic_left_black</item>
+    </style>
+
+    <style name="BtnBackBlackA" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_7</item>
+        <item name="android:layout_height">@dimen/size_7</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/circle_button_black</item>
+        <item name="android:padding">@dimen/size_back</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:src">@drawable/ic_left_white</item>
+    </style>
+
+    <style name="BtnBlackAndWhite" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_7</item>
+        <item name="android:layout_height">@dimen/size_7</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/circle_white</item>
+        <item name="android:padding">@dimen/size_back</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+
+    </style>
+
+    <style name="BtnBackBlack" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_6</item>
+        <item name="android:layout_height">@dimen/size_6</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/circle_button_black</item>
+        <item name="android:padding">@dimen/size_back</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:src">@drawable/ic_left_white</item>
+    </style>
+
+    <style name="TextField" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_17</item>
+        <item name="android:layout_height">@dimen/size_11</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/padding_big</item>
+        <item name="android:background">@drawable/btn_corners_white</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/font_4</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TvField" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">@dimen/size_17</item>
+        <item name="android:layout_height">@dimen/size_11</item>
+        <item name="android:layout_marginTop">@dimen/padding_big</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+    <style name="TvWhite" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+    <style name="TvBlack" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+    <style name="BtnKeys" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/size_5</item>
+        <item name="android:layout_height">@dimen/size_5</item>
+        <item name="android:background">@drawable/btn_white_blue_checked</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/button_keys_big_text_color</item>
+    </style>
+
+    <style name="ImgBtnOne">
+        <item name="android:layout_width">@dimen/size_9</item>
+        <item name="android:layout_height">@dimen/size_9</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="ImgBtnTwo">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/size_14</item>
+        <item name="android:layout_weight">25</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">@dimen/margin_button</item>
+
+    </style>
+
+    <style name="ImgBtnThree">
+        <item name="android:layout_width">@dimen/size_9</item>
+        <item name="android:layout_height">@dimen/size_9</item>
+        <item name="android:layout_weight">25</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">@dimen/margin_button</item>
+
+    </style>
+
+    <style name="ImgBtnYesNo">
+        <item name="android:layout_width">@dimen/size_6</item>
+        <item name="android:layout_height">@dimen/size_6</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:padding">@dimen/margin_button</item>
+    </style>
+
+    <style name="ImgBtnMiddle">
+        <item name="android:layout_width">@dimen/size_6</item>
+        <item name="android:layout_height">@dimen/size_6</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">@dimen/margin_button</item>
+
+    </style>
+
+    <style name="TvBlackButton" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/font_2</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/padding_small</item>
+    </style>
+
+    <style name="TvWhiteButton" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/font_2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/padding_small</item>
+    </style>
+
+    <style name="TvBlackBigButton" >
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/font_2</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">-2dp</item>
+    </style>
+
+    <style name="imgBlackButton" >
+        <item name="android:layout_width">@dimen/size_7</item>
+        <item name="android:layout_height">@dimen/size_7</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/margin_smallest</item>
+
+    </style>
+
+    <style name="imgBlackButtonBig" >
+        <item name="android:layout_width">@dimen/size_5</item>
+        <item name="android:layout_height">@dimen/size_5</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/margin_big</item>
+    </style>
+
+    <style name="imgBlackButtonBigRv" >
+        <item name="android:layout_width">@dimen/size_16</item>
+        <item name="android:layout_height">@dimen/size_16</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">@dimen/margin_med</item>
+    </style>
+
+    <style name="BrandedSwitch" parent="Theme.AppCompat.Light">
+
+        <item name="colorPrimary">@color/colorLightGrey</item>
+        <item name="colorPrimaryDark">@color/colorGrey</item>
+        <item name="colorAccent">@color/colorGreen</item>
+
+    </style>
+
+
+    <style name="Theme.AppCompat.NoActionBar" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogCargoStyle">
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+</resources>

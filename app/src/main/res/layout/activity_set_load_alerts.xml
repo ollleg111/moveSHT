@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/coordinator_layout"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 tools:context=".LoadAlertActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_black">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_14">
+
+            <movesht.com.movesht.CustomFontsTextView
+                android:id="@+id/tv_title"
+                style="@style/TvField"
+                android:layout_centerInParent="true"
+                android:text="@string/set_load_alerts"
+                app:fontName="BebasNeueBold" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/size_7"
+                android:layout_height="@dimen/size_7"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="@drawable/button_second_white"
+                android:padding="@dimen/size_back"
+                android:src="@drawable/ic_left_black"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/btn_back_office"
+                android:layout_width="@dimen/size_7"
+                android:layout_height="@dimen/size_7"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="@drawable/button_second_black"
+                android:padding="@dimen/size_back"
+                android:src="@drawable/ic_left_white"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_bottom"
+            android:layout_below="@id/rl_title"
+            android:background="@color/colorWhite"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_14"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/size_7"
+                android:layout_height="@dimen/size_7"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="@drawable/button_second_white"
+                android:padding="@dimen/margin_button"
+                android:src="@drawable/ic_cancel_red"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/btn_ok"
+                android:layout_width="@dimen/size_7"
+                android:layout_height="@dimen/size_7"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:background="@drawable/button_second_white"
+                android:padding="@dimen/margin_button"
+                android:src="@drawable/ic_ok_green"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@id/activity_container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/background_black"
+             tools:context=".MainActivity">
+
+    <movesht.com.movesht.CustomFontsTextView
+        android:id="@+id/tv_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:padding="@dimen/margin_smallest"
+        android:text="@string/sign_up"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_5"
+        app:fontName="ArimoRegular"/>
+
+    <movesht.com.movesht.CustomFontsTextView
+        android:id="@+id/tv_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="@dimen/margin_smallest"
+        android:paddingBottom="@dimen/margin_small"
+        android:text="@string/demo"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/font_5"
+        app:fontName="ArimoRegular"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/size_1"
+            android:layout_height="@dimen/size_1"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/z_fingerprint_one"
+            tools:ignore="ContentDescription"/>
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/move_sht"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_4"
+            app:fontName="BebasNeueBook"/>
+
+        <movesht.com.movesht.CustomFontsEditText
+            android:id="@+id/ed_login"
+            android:layout_width="@dimen/size_text_one"
+            android:layout_height="@dimen/margin_medium"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_small"
+            android:background="@drawable/rounded_text"
+            android:gravity="center"
+            android:hint="@string/phone"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/font_4"/>
+
+        <movesht.com.movesht.CustomFontsEditText
+            android:id="@+id/ed_password"
+            android:layout_width="@dimen/size_text_one"
+            android:layout_height="@dimen/margin_medium"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_med"
+            android:background="@drawable/rounded_text"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/font_4"/>
+
+        <ImageView
+            android:id="@+id/img_two"
+            android:layout_width="@dimen/margin_biggest"
+            android:layout_height="@dimen/margin_biggest"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_big"
+            android:src="@drawable/z_fingerprint_three"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+
+</FrameLayout>

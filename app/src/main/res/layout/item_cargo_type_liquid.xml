@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_cargo_liquid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/colorTransperent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <movesht.com.movesht.CustomFontsEditText
+        android:id="@+id/ed_volume_ft_loose"
+        style="@style/TextField"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:hint="@string/volume"
+        android:inputType="textPersonName"
+        app:fontName="BebasNeueBold" />
+
+    <movesht.com.movesht.CustomFontsEditText
+        android:id="@+id/ed_weight_loose"
+        style="@style/TextField"
+        android:hint="@string/weight"
+        android:inputType="textPersonName"
+        app:fontName="BebasNeueBold" />
+
+    <movesht.com.movesht.CustomFontsTextView
+        android:id="@+id/tv_not_packed"
+        style="@style/TextField"
+        android:text="@string/not_packed"
+        app:fontName="BebasNeueBold" />
+
+</LinearLayout>

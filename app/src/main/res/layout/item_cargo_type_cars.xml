@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_cargo_type_cars"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/colorTransperent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <movesht.com.movesht.CustomFontsEditText
+        android:id="@+id/ed_make"
+        style="@style/TextField"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:hint="@string/make"
+        android:inputType="textPersonName"
+        app:fontName="BebasNeueBold" />
+
+    <movesht.com.movesht.CustomFontsEditText
+        android:id="@+id/ed_model"
+        style="@style/TextField"
+        android:hint="@string/model"
+        android:inputType="textPersonName"
+        app:fontName="BebasNeueBold" />
+
+    <movesht.com.movesht.CustomFontsEditText
+        android:id="@+id/ed_year"
+        style="@style/TextField"
+        android:hint="@string/year"
+        android:inputType="textPersonName"
+        app:fontName="BebasNeueBold" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/size_17"
+        android:layout_height="@dimen/size_11"
+        android:layout_marginTop="@dimen/padding_big"
+        android:gravity="center_vertical">
+
+        <movesht.com.movesht.CustomFontsTextView
+            android:id="@+id/tv_operational"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="@string/operational"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_6"
+            app:fontName="BebasNeueBold" />
+
+        <ToggleButton
+            android:id="@+id/btn_no"
+            android:layout_width="@dimen/size_16"
+            android:layout_height="@dimen/size_11"
+            android:background="@drawable/selector_btn_cars_keys_right"
+            android:textColor="@drawable/btn_cars_keys_text"
+            android:textOff="@string/no"
+            android:textOn="@string/no"
+            android:textSize="@dimen/font_3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ToggleButton
+            android:id="@+id/btn_yes"
+            android:layout_width="@dimen/size_16"
+            android:layout_height="@dimen/size_11"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_no"
+            android:layout_toStartOf="@+id/btn_no"
+            android:checked="true"
+            android:background="@drawable/selector_btn_cars_keys_left"
+            android:textColor="@drawable/btn_cars_keys_text"
+            android:textOff="@string/yes"
+            android:textOn="@string/yes"
+            android:textSize="@dimen/font_3" />
+
+    </RelativeLayout>
+
+</LinearLayout>

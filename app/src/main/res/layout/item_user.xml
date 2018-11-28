@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_1">
+
+    <movesht.com.movesht.CustomFontsTextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_9"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_4"
+        android:layout_marginStart="@dimen/size_4"
+        android:gravity="center"
+        android:text="@string/jack_daniels"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_9"
+        app:fontName="BebasNeueBook" />
+
+    <ImageView
+        android:id="@+id/img_chaine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_4"
+        android:layout_marginRight="@dimen/size_4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_chaine"/>
+
+    <View
+        android:id="@+id/iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGrey" />
+
+</RelativeLayout>

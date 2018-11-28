@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/coordinator_layout"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/menu_bottom_navigation"/>
+
+        <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                xmlns:tools="http://schemas.android.com/tools"
+                                                android:id="@+id/dl_menu"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_above="@id/navigation"
+                                                android:background="@color/colorWhite"
+                                                tools:context=".SecondActivity">
+
+            <FrameLayout
+                android:id="@+id/fl_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/navigation"/>
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nv_menu"
+                android:layout_width="@dimen/size_12"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/size_14"
+                android:background="@color/colorLightGrey">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_smallest"
+                    android:paddingEnd="@dimen/padding_smallest"
+                    android:paddingRight="@dimen/padding_smallest"
+                    android:paddingStart="@dimen/padding_smallest"
+                    android:paddingTop="@dimen/padding_smallest"
+                    android:showDividers="beginning|middle"
+                    android:weightSum="100">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="25"
+                                    android:background="@drawable/side_nav_bar">
+
+                        <ImageView
+                            android:id="@+id/img_person"
+                            android:layout_width="@dimen/margin_bigger"
+                            android:layout_height="@dimen/margin_bigger"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:layout_marginLeft="@dimen/margin_button"
+                            android:layout_marginRight="@dimen/margin_button"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:background="@drawable/circle_button_grey"
+                            android:padding="@dimen/margin_button"
+                            android:src="@drawable/ic_person_white"
+                            tools:ignore="ContentDescription"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@color/colorGrey"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_contacts"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:background="@color/colorWhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <movesht.com.movesht.CustomFontsTextView
+                            android:id="@+id/tv_nav_contacts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_button"
+                            android:layout_marginTop="@dimen/margin_button"
+                            android:paddingLeft="@dimen/padding_big"
+                            android:paddingRight="@dimen/padding_big"
+                            android:paddingStart="@dimen/padding_big"
+                            android:text="@string/nav_contacts"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_5"
+                            app:fontName="ArimoRegular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_messages"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:background="@color/colorWhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <movesht.com.movesht.CustomFontsTextView
+                            android:id="@+id/tv_nav_messages"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_button"
+                            android:layout_marginTop="@dimen/margin_button"
+                            android:paddingLeft="@dimen/padding_big"
+                            android:paddingRight="@dimen/padding_big"
+                            android:paddingStart="@dimen/padding_big"
+                            android:text="@string/nav_messages"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_5"
+                            app:fontName="ArimoRegular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:background="@color/colorWhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <movesht.com.movesht.CustomFontsTextView
+                            android:id="@+id/tv_nav_office"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_button"
+                            android:layout_marginTop="@dimen/margin_button"
+                            android:paddingLeft="@dimen/padding_big"
+                            android:paddingRight="@dimen/padding_big"
+                            android:paddingStart="@dimen/padding_big"
+                            android:text="@string/nav_office"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_5"
+                            app:fontName="ArimoRegular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="13"
+                        android:background="@color/colorWhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <movesht.com.movesht.CustomFontsTextView
+                            android:id="@+id/tv_nav_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_button"
+                            android:layout_marginTop="@dimen/margin_button"
+                            android:paddingLeft="@dimen/padding_big"
+                            android:paddingRight="@dimen/padding_big"
+                            android:paddingStart="@dimen/padding_big"
+                            android:text="@string/nav_settings"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_5"
+                            app:fontName="ArimoRegular"/>
+                    </LinearLayout>
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/rl_duty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="13"
+                                    android:background="@color/colorWhite"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/padding_big"
+                                    android:paddingRight="@dimen/padding_big"
+                                    android:paddingStart="@dimen/padding_big">
+
+                        <movesht.com.movesht.CustomFontsTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:text="@string/nav_duty"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/font_5"
+                            app:fontName="ArimoRegular"/>
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/sc_nav_duty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            app:theme="@style/BrandedSwitch"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:background="@color/colorWhite"/>
+                </LinearLayout>
+            </android.support.design.widget.NavigationView>
+        </android.support.v4.widget.DrawerLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_14"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="@dimen/size_6"
+                android:layout_height="@dimen/size_6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/button_nav_white_menu"
+                tools:ignore="ContentDescription"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

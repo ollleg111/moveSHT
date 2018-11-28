@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_office_confirmed_grey" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_office_confirmed_black"/>
+
+</selector>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item-->
+        <!--android:gravity="bottom"-->
+        <!--android:right="@dimen/margin_medium"-->
+        <!--android:left="@dimen/margin_medium"-->
+        <!--android:bottom="@dimen/margin_medium"-->
+        <!--android:top="@dimen/margin_medium"-->
+        <!--android:drawable="@drawable/circle_button_black"/>-->
+    <!--<item-->
+        <!--android:top="@dimen/margin_big"-->
+        <!--android:right="@dimen/margin_big"-->
+        <!--android:left="@dimen/margin_big"-->
+        <!--android:bottom="@dimen/margin_big"-->
+        <!--android:drawable="@drawable/ic_confirmed_white"-->
+        <!--android:gravity="center"/>-->
+<!--</layer-list>-->
